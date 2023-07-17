@@ -10,8 +10,12 @@
 .btn-primary {
     width: 180px;
     height: 64px;
+    font-size: 1.15rem;
     border-radius: 8px;
     background: #FF900E;
+    color: #FFF;
+    cursor: pointer;
+    border: 0;
 }
 
 /* header styles  */
@@ -64,4 +68,31 @@ nav li a {
 
 .banner-description {
     color: #727272;
+}
+.banner img{
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* responsive media queries*/
+
+/*mobile divices */
+@media screen and ( max-width :576px ) {
+    header{
+        padding: 20px;
+    }
+    nav {
+     flex-direction: column;
+    }
+}
+/* tablet or medium devices */
+
+@media screen and (min-width: 576px) and (max-width:960px) {
+
+    header{
+        padding: 50px;
+        
+    nav{
+        flex-direction: column;
+    }
 }
